@@ -1,0 +1,7 @@
+.navigation {
+  background-color: #94c9d6;
+}
+.navigation__item {
+  display: flex;
+  flex-direction: row;
+}
