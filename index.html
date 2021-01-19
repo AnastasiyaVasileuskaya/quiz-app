@@ -12,28 +12,67 @@
   </head>
   <body class="app-grid">
     <section class="header"><h1>Quiz App</h1></section>
-    <section class="main"></section>
+    <section class="main">
+      <div class="main-card">
+        <h2 class="main-card__title">Question:</h2>
+        <div class="main-card__content">
+          <p>Was ist das chemische Symbol für Silber?</p>
+          <details>
+            <summary>Show Answer</summary>
+            <p>Ag</p>
+          </details>
+          <ul class="main-card__answer">
+            <a href="#" class="main-card__answeritem"><li>Au</li></a>
+            <a href="#" class="main-card__answeritem"><li>Ag</li></a>
+            <a href="#" class="main-card__answeritem"><li>Pb</li></a>
+            <a href="#" class="main-card__answeritem"><li>Hg</li></a>
+          </ul>
+        </div>
+      </div>
+
+      <div class="main-card">
+        <h2 class="main-card__title">Question:</h2>
+        <div class="main-card__content">
+          <p>Was ist die Lebensdauer einer Libelle?</p>
+          <details>
+            <summary>Show Answer</summary>
+            <p>24 Stunden</p>
+          </details>
+          <ul class="main-card__answer">
+            <a href="#" class="main-card__answeritem"> <li>1 Monat</li></a>
+            <a href="#" class="main-card__answeritem"><li>1 Woche</li></a>
+            <a href="#" class="main-card__answeritem"><li>24 Stunden</li></a>
+            <a href="#" class="main-card__answeritem"><li>3 Tage</li></a>
+          </ul>
+        </div>
+      </div>
+    </section>
     <section class="navigation">
       <ul class="navigation__item">
-        <li class="navigation__icon">
-          <i class="fas fa-home"></i>
-          <span>Home</span>
-        </li>
-
-        <li class="navigation__icon">
-          <i class="fas fa-bookmark"></i>
-          <span>Bookmark</span>
-        </li>
-
-        <li class="navigation__icon">
-          <i class="fab fa-creative-commons-share"></i>
-          <span>Create</span>
-        </li>
-
-        <li class="navigation__icon">
-          <i class="fas fa-address-card"></i>
-          <span>Profile</span>
-        </li>
+        <a href="#" class="navigation__btn">
+          <li class="navigation__icon">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+          </li>
+        </a>
+        <a href="#" class="navigation__btn">
+          <li class="navigation__icon">
+            <i class="fas fa-bookmark"></i>
+            <span>Bookmark</span>
+          </li>
+        </a>
+        <a href="#" class="navigation__btn">
+          <li class="navigation__icon">
+            <i class="fab fa-creative-commons-share"></i>
+            <span>Create</span>
+          </li>
+        </a>
+        <a href="#" class="navigation__btn">
+          <li class="navigation__icon">
+            <i class="fas fa-address-card"></i>
+            <span>Profile</span>
+          </li>
+        </a>
       </ul>
     </section>
   </body>
