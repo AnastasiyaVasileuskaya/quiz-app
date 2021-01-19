@@ -1,7 +1,31 @@
 .navigation {
   background-color: #94c9d6;
+  grid-area: navigation;
+  max-height: 48px;
+  width: 100%;
+  text-align: justify;
 }
+
 .navigation__item {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0 10px;
+  max-height: 48px;
+  padding-left: 0;
+}
+
+.navigation__item span {
+  color: black;
+  font-size: 10px;
+  padding: 5px 0 10px 0;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.navigation__icon {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
 }
