@@ -1,5 +1,4 @@
 .main {
-  background: white;
   overflow-y: scroll;
 }
 
@@ -30,7 +29,7 @@
   padding-bottom: 20px;
 }
 
-.button {
+.main-card__answeritem {
   border: none;
   color: black;
   background: white;
