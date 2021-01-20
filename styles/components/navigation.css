@@ -26,9 +26,15 @@
   display: table-cell;
   text-align: center;
   vertical-align: middle;
-}
-
-.navigation__btn {
+  padding-top: 10px;
   text-decoration: none;
   color: black;
+}
+
+.navigation__icon i {
+  font-size: 25px;
+}
+
+.navigation__icon span {
+  padding-bottom: 0;
 }
