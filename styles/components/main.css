@@ -1,11 +1,20 @@
 .main {
-  background: #cae8ef;
+  background: white;
+  overflow-y: scroll;
 }
 
 .main-card {
   background-color: #94c9d6;
   margin: 0 10px;
   text-align: center;
+  position: relative;
+}
+
+.main-card__content i {
+  position: absolute;
+  top: -10px;
+  right: 20px;
+  font-size: 40px;
 }
 
 .main-card h2 {
@@ -21,9 +30,13 @@
   padding-bottom: 20px;
 }
 
-.main-card__answeritem {
-  background: #cae8ef;
-  text-decoration: none;
+.button {
+  border: none;
   color: black;
-  padding: 5px 5px;
+  background: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
 }
