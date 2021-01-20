@@ -1,5 +1,5 @@
 import './header.css'
-import navigation from './header.html'
+import header from './header.html'
 
 export default {
   title: 'Header',

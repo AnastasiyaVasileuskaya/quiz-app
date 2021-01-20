@@ -36,7 +36,6 @@
     "stylelint-prettier": "^1.1.2"
   },
   "dependencies": {
-    "live-server": "^1.2.1",
-    "stylelint-config-prettier": "^8.0.2"
+    "live-server": "^1.2.1"
   }
 }
