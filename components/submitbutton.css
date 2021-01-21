@@ -1,0 +1,11 @@
+.main-submit {
+  display: block;
+  text-align: center;
+  padding: 10px 10px;
+  margin-top: 30px;
+}
+
+.main-submit input {
+  width: 120px;
+  height: 40px;
+}

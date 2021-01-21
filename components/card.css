@@ -16,6 +16,10 @@
   font-size: 40px;
 }
 
+.main-card__content span[role='button'] {
+  cursor: pointer;
+}
+
 .main-card h2 {
   padding-top: 20px;
 }
@@ -35,7 +39,6 @@
   background: white;
   padding: 10px 10px;
   text-align: center;
-  text-decoration: none;
   font-size: 16px;
   cursor: pointer;
 }
