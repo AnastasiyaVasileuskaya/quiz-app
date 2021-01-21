@@ -2,7 +2,7 @@ import './app-grid.css'
 import html from './app-grid.html'
 
 export default {
-  title: 'html',
+  title: 'Grid',
 }
 
 export const base = () => html

@@ -36,6 +36,7 @@
     "stylelint-prettier": "^1.1.2"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.2",
     "live-server": "^1.2.1"
   }
 }

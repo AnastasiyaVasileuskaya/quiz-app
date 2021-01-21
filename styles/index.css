@@ -1,4 +1,4 @@
-@import '../styles/_base.css';
+@import '_base.css';
 @import '../components/app-grid.css';
 @import '../components/card.css';
 @import '../components/navigation.css';
