@@ -7,6 +7,9 @@
   margin: 0 10px;
   text-align: center;
   position: relative;
+  box-shadow: 0 12.4px 16px -2px rgba(0, 0, 0, 0.082),
+    0 43.7px 53.6px -2px rgba(0, 0, 0, 0.12),
+    0 192px 240px -2px rgba(0, 0, 0, 0.2);
 }
 
 .main-card__content i {

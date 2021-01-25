@@ -3,7 +3,8 @@
 @import '../components/app-grid.css';
 @import '../components/navigation.css';
 @import '../components/header.css';
-@import '../components/inputform.css';
-@import '../components/inputformsmall.css';
+@import '../components/photo.css';
 @import '../components/submitbutton.css';
+@import '../components/aboutme.css';
+@import '../components/skills.css';
 @import '_utility.css';

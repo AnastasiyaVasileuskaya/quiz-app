@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles/profile.css" />
+    <script
+      src="https://kit.fontawesome.com/735d74e77f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="app-grid">
+    <header class="header"><h1>Profile</h1></header>
+    <main class="main">
+      <div class="profile">
+        <img class="profile__photo" src="../material/Profilbild.jpg" alt="" />
+        <h2 class="profile__name">Anastasiya Vasileuskaya</h2>
+      </div>
+      <section class="aboutme">
+        <h2>About yourself</h2>
+        <p>
+          Hallo! Ich bin Anastasiya und zurzeit nehme ich am Web Development
+          Bootcamp bei neueFische in Hamburg teil.
+        </p>
+      </section>
+      <section class="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+          <li class="skills-list__item">HTML5</li>
+          <li class="skills-list__item">CSS3</li>
+          <li class="skills-list__item">JavaScript</li>
+        </ul>
+      </section>
+
+      <section class="main-submit mt-10">
+        <input type="submit" value="Logout" />
+      </section>
+    </main>
+
+    <footer class="navigation">
+      <nav class="navigation__item">
+        <a href="index.html" class="navigation__icon">
+          <i class="fas fa-home"></i>
+          <span>Home</span>
+        </a>
+        <a href="bookmarks.html" class="navigation__icon">
+          <i class="fas fa-bookmark"></i>
+          <span>Bookmark</span>
+        </a>
+        <a href="create.html" class="navigation__icon">
+          <i class="fas fa-file-alt"></i>
+          <span>Create</span>
+        </a>
+        <a
+          href="profile.html"
+          class="navigation__icon navigation__icon--current"
+        >
+          <i class="fas fa-address-card"></i>
+          <span>Profile</span>
+        </a>
+      </nav>
+    </footer>
+  </body>
+</html>

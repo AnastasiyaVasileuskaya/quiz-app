@@ -1,0 +1,17 @@
+.profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 30px 0;
+}
+
+.profile__photo {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.profile__name {
+  margin-left: 40px;
+}

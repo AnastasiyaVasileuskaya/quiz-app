@@ -1,0 +1,18 @@
+.skills {
+  padding: 0 30px;
+}
+
+.skills-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+}
+
+.skills-list__item {
+  background-color: #94c9d6;
+  padding: 10px;
+  box-shadow: 0 12.4px 16px -2px rgba(0, 0, 0, 0.082),
+    0 43.7px 53.6px -2px rgba(0, 0, 0, 0.12),
+    0 192px 240px -2px rgba(0, 0, 0, 0.2);
+}
