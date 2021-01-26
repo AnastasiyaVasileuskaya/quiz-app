@@ -30,7 +30,6 @@ bookmarksButton.addEventListener('click', () => {
     bookmarksButton.classList.add('active')
     createButton.classList.remove('active')
     profileButton.classList.remove('active')
-    
 })
 
 createButton.addEventListener('click', () => {
