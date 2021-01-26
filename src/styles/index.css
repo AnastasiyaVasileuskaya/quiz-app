@@ -1,9 +1,9 @@
 @import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
-@import '_base.css';
+@import './_base.css';
 @import '../components/app-grid.css';
 @import '../components/card.css';
 @import '../components/navigation.css';
 @import '../components/header.css';
 @import '../components/bookmark.css';
 @import '../components/inputform.css';
-@import '_utility.css';
+@import './_utility.css';
