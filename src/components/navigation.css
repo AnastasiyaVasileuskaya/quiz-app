@@ -38,3 +38,11 @@
 .navigation__icon span {
   padding-bottom: 0;
 }
+
+.active {
+  color: #0080ff;
+}
+
+.active span {
+  color: #0080ff;
+}

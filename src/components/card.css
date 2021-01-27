@@ -39,7 +39,8 @@
 .main-card__answeritem {
   border: none;
   color: black;
-  background: white;
+  background-color: rgba(240, 240, 240, 1);
+  border-radius: 10px;
   padding: 10px 10px;
   text-align: center;
   font-size: 16px;
