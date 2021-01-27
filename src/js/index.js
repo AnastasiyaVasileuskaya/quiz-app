@@ -8,6 +8,8 @@ const bookmarksButton = document.querySelector('[data-js="bookmarksbutton"]')
 const createButton = document.querySelector('[data-js="createbutton"]')
 const profileButton = document.querySelector('[data-js="profilebutton"]')
 
+const header = document.querySelector('[data-js="header"]')
+
 quizappButton.addEventListener('click', () => {
     quizappPage.classList.remove('hidden')
     bookmarksPage.classList.add('hidden')
@@ -18,6 +20,8 @@ quizappButton.addEventListener('click', () => {
     bookmarksButton.classList.remove('active')
     createButton.classList.remove('active')
     profileButton.classList.remove('active')
+
+    header.textContent='Quiz App'
 })
 
 bookmarksButton.addEventListener('click', () => {
@@ -30,6 +34,8 @@ bookmarksButton.addEventListener('click', () => {
     bookmarksButton.classList.add('active')
     createButton.classList.remove('active')
     profileButton.classList.remove('active')
+
+    header.textContent='Bookmarks'
 })
 
 createButton.addEventListener('click', () => {
@@ -42,6 +48,8 @@ createButton.addEventListener('click', () => {
     bookmarksButton.classList.remove('active')
     createButton.classList.add('active')
     profileButton.classList.remove('active')
+
+    header.textContent='Create'
 })
 
 profileButton.addEventListener('click', () => {
@@ -54,4 +62,6 @@ profileButton.addEventListener('click', () => {
     bookmarksButton.classList.remove('active')
     createButton.classList.remove('active')
     profileButton.classList.add('active')
+
+    header.textContent='Profile'
 })

@@ -1,7 +1,3 @@
-.page.hidden {
+.hidden {
   display: none;
-}
-
-.page {
-  display: contents;
 }
