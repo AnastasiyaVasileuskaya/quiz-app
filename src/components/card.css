@@ -46,3 +46,7 @@
   font-size: 16px;
   cursor: pointer;
 }
+
+.fill {
+  background: black;
+}
