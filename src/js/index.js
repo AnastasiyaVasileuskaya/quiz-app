@@ -109,9 +109,16 @@ submitButton.addEventListener('click', () => {
     })
 })
 
+document.querySelectorAll('[data-js="quizapp-page"] [data-js="bookmark"]').forEach(bookmark => {
+    bookmark.addEventListener('click', () => {
+    bookmark.classList.toggle('fas')
+    })
+})
+
 cards.forEach(card => {
-    const bookmark = card.querySelector('[data-js="bookmark"]')
-    bookmark.addEventListener('click',() => {
-        bookmark.classList.toggle('fas')
+    const cardButton = card.querySelector('[data-js="card-button"]')
+    const cardAnswer = card.querySelector('[data-js="card-answer"]')
+    cardButton.addEventListener('click',() => {
+        cardAnswer.classList.toggle('hidden')
     })
 })
