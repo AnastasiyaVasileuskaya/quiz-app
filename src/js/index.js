@@ -1,14 +1,23 @@
-const quizappPage = document.querySelector('[data-js="quizapppage"]')
-const bookmarksPage = document.querySelector('[data-js="bookmarkspage"]')
-const createPage = document.querySelector('[data-js="createpage"]')
-const profilePage = document.querySelector('[data-js="profilepage"]')
+function getElement(dataJsName) {
+    return document.querySelector(`[data-js="${dataJsName}"]`)
+  }
 
-const quizappButton = document.querySelector('[data-js="quizappbutton"]')
-const bookmarksButton = document.querySelector('[data-js="bookmarksbutton"]')
-const createButton = document.querySelector('[data-js="createbutton"]')
-const profileButton = document.querySelector('[data-js="profilebutton"]')
+const quizappPage = getElement('quizapp-page')
+const bookmarksPage = getElement('bookmarks-page')
+const createPage = getElement('create-page')
+const profilePage = getElement('profile-page')
 
-const header = document.querySelector('[data-js="header"]')
+const quizappButton = getElement('quizapp-button')
+const bookmarksButton = getElement('bookmarks-button')
+const createButton = getElement('create-button')
+const profileButton = getElement('profile-button')
+
+const header = getElement('header')
+
+const form = getElement('createpage-form')
+const submitButton = form.querySelector('[data-js="submit-button"]')
+const textareaSections = form.querySelectorAll('[data-js="createpage-input"]')
+const firstTextarea = textareaSections[0].querySelector('[data-js="createpage-textarea"]')
 
 quizappButton.addEventListener('click', () => {
     quizappPage.classList.remove('hidden')
@@ -64,4 +73,36 @@ profileButton.addEventListener('click', () => {
     profileButton.classList.add('active')
 
     header.textContent='Profile'
+})
+
+textareaSections.forEach(textareaSection => {
+    setTextareaMaxLength(textareaSection)
+    addTextareaInputListener (textareaSection)
+})
+
+function setTextareaMaxLength (textareaSection) {
+    const textareaMaxlength = textareaSection.querySelector('[data-js="texarea-maxlength"]')
+    const textarea = textareaSection.querySelector('[data-js="createpage-textarea"]')
+    textareaMaxlength.innerHTML = textarea.maxLength
+    
+}
+
+function addTextareaInputListener (textareaSection) {
+    const textarea = textareaSection.querySelector('[data-js="createpage-textarea"]')
+    const textareaMaxlength = textareaSection.querySelector('[data-js="texarea-maxlength"]')
+    textarea.addEventListener('input', () => {
+        textareaMaxlength.innerHTML = textarea.maxLength - textarea.value.length+" / "+`${textarea.maxLength}`
+    })
+}
+
+form.addEventListener('submit', event => {
+    event.preventDefault()
+})
+
+submitButton.addEventListener('click', () => {
+    form.reset()
+    firstTextarea.focus()
+    textareaSections.forEach(textareaSection => {
+        setTextareaMaxLength(textareaSection)
+    })
 })
