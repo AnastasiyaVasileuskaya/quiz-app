@@ -19,6 +19,8 @@ const submitButton = form.querySelector('[data-js="submit-button"]')
 const textareaSections = form.querySelectorAll('[data-js="createpage-input"]')
 const firstTextarea = textareaSections[0].querySelector('[data-js="createpage-textarea"]')
 
+const cards = document.querySelectorAll('[data-js="card"]')
+
 quizappButton.addEventListener('click', () => {
     quizappPage.classList.remove('hidden')
     bookmarksPage.classList.add('hidden')
@@ -104,5 +106,12 @@ submitButton.addEventListener('click', () => {
     firstTextarea.focus()
     textareaSections.forEach(textareaSection => {
         setTextareaMaxLength(textareaSection)
+    })
+})
+
+cards.forEach(card => {
+    const bookmark = card.querySelector('[data-js="bookmark"]')
+    bookmark.addEventListener('click',() => {
+        bookmark.classList.toggle('fas')
     })
 })
