@@ -2,7 +2,7 @@ function getElement(dataJsName) {
     return document.querySelector(`[data-js="${dataJsName}"]`)
   }
 
-const quizappPage = getElement('quizapp-page')
+const homePage = getElement('quizapp-page')
 const bookmarksPage = getElement('bookmarks-page')
 const createPage = getElement('create-page')
 const profilePage = getElement('profile-page')
@@ -19,8 +19,10 @@ const submitButton = form.querySelector('[data-js="submit-button"]')
 const textareaSections = form.querySelectorAll('[data-js="createpage-input"]')
 const firstTextarea = textareaSections[0].querySelector('[data-js="createpage-textarea"]')
 
+const cards = document.querySelectorAll('[data-js="card"]')
+
 quizappButton.addEventListener('click', () => {
-    quizappPage.classList.remove('hidden')
+    homePage.classList.remove('hidden')
     bookmarksPage.classList.add('hidden')
     createPage.classList.add('hidden')
     profilePage.classList.add('hidden')
@@ -34,7 +36,7 @@ quizappButton.addEventListener('click', () => {
 })
 
 bookmarksButton.addEventListener('click', () => {
-    quizappPage.classList.add('hidden')
+    homePage.classList.add('hidden')
     bookmarksPage.classList.remove('hidden')
     createPage.classList.add('hidden')
     profilePage.classList.add('hidden')
@@ -48,7 +50,7 @@ bookmarksButton.addEventListener('click', () => {
 })
 
 createButton.addEventListener('click', () => {
-    quizappPage.classList.add('hidden')
+    homePage.classList.add('hidden')
     bookmarksPage.classList.add('hidden')
     createPage.classList.remove('hidden')
     profilePage.classList.add('hidden')
@@ -62,7 +64,7 @@ createButton.addEventListener('click', () => {
 })
 
 profileButton.addEventListener('click', () => {
-    quizappPage.classList.add('hidden')
+    homePage.classList.add('hidden')
     bookmarksPage.classList.add('hidden')
     createPage.classList.add('hidden')
     profilePage.classList.remove('hidden')
@@ -91,18 +93,30 @@ function addTextareaInputListener (textareaSection) {
     const textarea = textareaSection.querySelector('[data-js="createpage-textarea"]')
     const textareaMaxlength = textareaSection.querySelector('[data-js="texarea-maxlength"]')
     textarea.addEventListener('input', () => {
-        textareaMaxlength.innerHTML = textarea.maxLength - textarea.value.length+" / "+`${textarea.maxLength}`
+        textareaMaxlength.innerHTML = textarea.maxLength - textarea.value.length + " / " + textarea.maxLength
     })
 }
 
 form.addEventListener('submit', event => {
     event.preventDefault()
-})
-
-submitButton.addEventListener('click', () => {
     form.reset()
     firstTextarea.focus()
     textareaSections.forEach(textareaSection => {
         setTextareaMaxLength(textareaSection)
     })
 })
+
+document.querySelectorAll('[data-js="quizapp-page"] [data-js="bookmark"]').forEach(bookmark => {
+    bookmark.addEventListener('click', () => {
+    bookmark.classList.toggle('fas')
+    })
+})
+
+cards.forEach(card => {
+    const cardButton = card.querySelector('[data-js="card-button"]')
+    const cardAnswer = card.querySelector('[data-js="card-answer"]')
+    cardButton.addEventListener('click',() => {
+        cardAnswer.classList.toggle('hidden')
+    })
+})
+

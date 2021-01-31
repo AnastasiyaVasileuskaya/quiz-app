@@ -23,11 +23,14 @@
 }
 
 .navigation__icon {
+  height: 60px;
+  width: 80px;
+  background-color: rgba(240, 240, 240, 1);
+  border: none;
   display: table-cell;
   text-align: center;
   vertical-align: middle;
-  padding-top: 10px;
-  text-decoration: none;
+  padding: 5px;
   color: black;
 }
 
@@ -37,12 +40,4 @@
 
 .navigation__icon span {
   padding-bottom: 0;
-}
-
-.active {
-  color: #0080ff;
-}
-
-.active span {
-  color: #0080ff;
 }
