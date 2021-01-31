@@ -2,7 +2,7 @@ function getElement(dataJsName) {
     return document.querySelector(`[data-js="${dataJsName}"]`)
   }
 
-const quizappPage = getElement('quizapp-page')
+const homePage = getElement('quizapp-page')
 const bookmarksPage = getElement('bookmarks-page')
 const createPage = getElement('create-page')
 const profilePage = getElement('profile-page')
@@ -22,7 +22,7 @@ const firstTextarea = textareaSections[0].querySelector('[data-js="createpage-te
 const cards = document.querySelectorAll('[data-js="card"]')
 
 quizappButton.addEventListener('click', () => {
-    quizappPage.classList.remove('hidden')
+    homePage.classList.remove('hidden')
     bookmarksPage.classList.add('hidden')
     createPage.classList.add('hidden')
     profilePage.classList.add('hidden')
@@ -36,7 +36,7 @@ quizappButton.addEventListener('click', () => {
 })
 
 bookmarksButton.addEventListener('click', () => {
-    quizappPage.classList.add('hidden')
+    homePage.classList.add('hidden')
     bookmarksPage.classList.remove('hidden')
     createPage.classList.add('hidden')
     profilePage.classList.add('hidden')
@@ -50,7 +50,7 @@ bookmarksButton.addEventListener('click', () => {
 })
 
 createButton.addEventListener('click', () => {
-    quizappPage.classList.add('hidden')
+    homePage.classList.add('hidden')
     bookmarksPage.classList.add('hidden')
     createPage.classList.remove('hidden')
     profilePage.classList.add('hidden')
@@ -64,7 +64,7 @@ createButton.addEventListener('click', () => {
 })
 
 profileButton.addEventListener('click', () => {
-    quizappPage.classList.add('hidden')
+    homePage.classList.add('hidden')
     bookmarksPage.classList.add('hidden')
     createPage.classList.add('hidden')
     profilePage.classList.remove('hidden')
@@ -93,15 +93,12 @@ function addTextareaInputListener (textareaSection) {
     const textarea = textareaSection.querySelector('[data-js="createpage-textarea"]')
     const textareaMaxlength = textareaSection.querySelector('[data-js="texarea-maxlength"]')
     textarea.addEventListener('input', () => {
-        textareaMaxlength.innerHTML = textarea.maxLength - textarea.value.length+" / "+`${textarea.maxLength}`
+        textareaMaxlength.innerHTML = textarea.maxLength - textarea.value.length + " / " + textarea.maxLength
     })
 }
 
 form.addEventListener('submit', event => {
     event.preventDefault()
-})
-
-submitButton.addEventListener('click', () => {
     form.reset()
     firstTextarea.focus()
     textareaSections.forEach(textareaSection => {
@@ -122,3 +119,4 @@ cards.forEach(card => {
         cardAnswer.classList.toggle('hidden')
     })
 })
+

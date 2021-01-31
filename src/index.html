@@ -163,7 +163,7 @@
     </main>
 
     <main class="main hidden" data-js="create-page">
-      <form action="" data-js="createpage-form">
+      <form data-js="createpage-form">
         <section class="main-input" data-js="createpage-input">
           <label for="question">Add question:</label
           ><span data-js="texarea-maxlength" class="texarea-maxlength"></span>
@@ -184,7 +184,7 @@
             name="answer"
           ></textarea>
         </section>
-        <section class="main-input-small" data-js="createpage-input">
+        <section class="main-input--small" data-js="createpage-input">
           <label for="tags">Add tags:</label
           ><span data-js="texarea-maxlength" class="texarea-maxlength"></span>
           <textarea
@@ -194,9 +194,7 @@
             name="tags"
           ></textarea>
         </section>
-        <section class="main-submit" data-js="submit-button">
-          <input type="submit" value="Submit" />
-        </section>
+        <button class="main-submit" data-js="submit-button">Submit</button>
       </form>
     </main>
 
@@ -221,29 +219,27 @@
         </ul>
       </section>
 
-      <section class="main-submit mt-10">
-        <input type="submit" value="Logout" />
-      </section>
+      <button class="main-submit mt-10">Logout</button>
     </main>
 
     <footer class="navigation">
       <nav class="navigation__item">
-        <a href="#" data-js="quizapp-button" class="navigation__icon active">
+        <button data-js="quizapp-button" class="navigation__icon">
           <i class="fas fa-home"></i>
           <span>Home</span>
-        </a>
-        <a href="#" data-js="bookmarks-button" class="navigation__icon">
+        </button>
+        <button data-js="bookmarks-button" class="navigation__icon">
           <i class="fas fa-bookmark"></i>
           <span>Bookmark</span>
-        </a>
-        <a href="#" data-js="create-button" class="navigation__icon">
+        </button>
+        <button data-js="create-button" class="navigation__icon">
           <i class="fas fa-file-alt"></i>
           <span>Create</span>
-        </a>
-        <a href="#" data-js="profile-button" class="navigation__icon">
+        </button>
+        <button data-js="profile-button" class="navigation__icon">
           <i class="fas fa-address-card"></i>
           <span>Profile</span>
-        </a>
+        </button>
       </nav>
     </footer>
   </body>
