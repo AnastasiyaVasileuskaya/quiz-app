@@ -4,7 +4,7 @@
   "scripts": {
     "prettier:write": "prettier --write .",
     "stylelint": "npx stylelint \"**/*.css\"",
-    "test": "htmlhint && prettier --check . && npm run stylelint",
+    "test": "htmlhint && prettier --check . && npm run stylelint && eslint src",
     "start": "snowpack dev",
     "build": "snowpack build",
     "storybook": "start-storybook -p 6006",
@@ -25,20 +25,24 @@
   "description": "",
   "devDependencies": {
     "@babel/core": "^7.12.10",
+    "@fortawesome/fontawesome-free": "^5.15.2",
     "@storybook/addon-actions": "^6.1.14",
     "@storybook/addon-essentials": "^6.1.14",
     "@storybook/addon-links": "^6.1.14",
     "@storybook/html": "^6.1.14",
     "babel-loader": "^8.2.2",
+    "eslint": "^7.19.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
     "htmlhint": "^0.14.2",
     "prettier": "^2.2.1",
     "snowpack": "^3.0.11",
     "stylelint": "^13.8.0",
     "stylelint-config-prettier": "^8.0.2",
-    "stylelint-config-standard": "^20.0.0",
-    "stylelint-prettier": "^1.1.2"
+    "stylelint-config-standard": "^20.0.0"
   },
-  "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.2"
-  }
+  "dependencies": {}
 }

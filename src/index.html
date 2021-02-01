@@ -14,7 +14,7 @@
 
   <body class="app-grid">
     <header class="header"><h1 data-js="header">Quiz App</h1></header>
-    <main class="main" data-js="quizapp-page">
+    <main class="main" data-name="home" data-js="page">
       <section class="main-card" data-js="card">
         <h2 class="main-card__title">Question:</h2>
         <div class="main-card__content">
@@ -88,7 +88,7 @@
       </section>
     </main>
 
-    <main class="main hidden" data-js="bookmarks-page">
+    <main class="main hidden" data-name="bookmarks" data-js="page">
       <section class="main-card" data-js="card">
         <h2 class="main-card__title">Question:</h2>
         <div class="main-card__content">
@@ -162,7 +162,7 @@
       </section>
     </main>
 
-    <main class="main hidden" data-js="create-page">
+    <main class="main hidden" data-name="create" data-js="page">
       <form data-js="createpage-form">
         <section class="main-input" data-js="createpage-input">
           <label for="question">Add question:</label
@@ -198,7 +198,7 @@
       </form>
     </main>
 
-    <main class="main hidden" data-js="profile-page">
+    <main class="main hidden" data-name="profile" data-js="page">
       <div class="profile">
         <img class="profile__photo" src="./assets/Profilbild.jpg" alt="" />
         <h2 class="profile__name">Anastasiya Vasileuskaya</h2>
@@ -224,19 +224,19 @@
 
     <footer class="navigation">
       <nav class="navigation__item">
-        <button data-js="quizapp-button" class="navigation__icon">
+        <button data-name="home" data-js="nav" class="navigation__icon active">
           <i class="fas fa-home"></i>
           <span>Home</span>
         </button>
-        <button data-js="bookmarks-button" class="navigation__icon">
+        <button data-name="bookmarks" data-js="nav" class="navigation__icon">
           <i class="fas fa-bookmark"></i>
           <span>Bookmark</span>
         </button>
-        <button data-js="create-button" class="navigation__icon">
+        <button data-name="create" data-js="nav" class="navigation__icon">
           <i class="fas fa-file-alt"></i>
           <span>Create</span>
         </button>
-        <button data-js="profile-button" class="navigation__icon">
+        <button data-name="profile" data-js="nav" class="navigation__icon">
           <i class="fas fa-address-card"></i>
           <span>Profile</span>
         </button>
