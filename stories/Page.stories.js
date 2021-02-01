@@ -1,5 +1,5 @@
-import { createPage } from './Page';
-import * as HeaderStories from './Header.stories';
+import { createPage } from './Page'
+import * as HeaderStories from './Header.stories'
 
 export default {
   title: 'Example/Page',
@@ -8,16 +8,16 @@ export default {
     onLogout: { action: 'onLogout' },
     onCreateAccount: { action: 'onCreateAccount' },
   },
-};
+}
 
-const Template = (args) => createPage(args);
+const Template = args => createPage(args)
 
-export const LoggedIn = Template.bind({});
+export const LoggedIn = Template.bind({})
 LoggedIn.args = {
   ...HeaderStories.LoggedIn.args,
-};
+}
 
-export const LoggedOut = Template.bind({});
+export const LoggedOut = Template.bind({})
 LoggedOut.args = {
   ...HeaderStories.LoggedOut.args,
-};
+}

@@ -25,7 +25,7 @@
 .navigation__icon {
   height: 60px;
   width: 80px;
-  background-color: rgba(240, 240, 240, 1);
+  background-color: #94c9d6;
   border: none;
   display: table-cell;
   text-align: center;
@@ -40,4 +40,12 @@
 
 .navigation__icon span {
   padding-bottom: 0;
+}
+
+.active {
+  color: rgba(240, 240, 240, 1);
+}
+
+.active span {
+  color: rgba(240, 240, 240, 1);
 }

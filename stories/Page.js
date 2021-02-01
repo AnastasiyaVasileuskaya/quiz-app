@@ -1,11 +1,11 @@
-import './page.css';
-import { createHeader } from './Header';
+import './page.css'
+import { createHeader } from './Header'
 
 export const createPage = ({ user, onLogout, onLogin, onCreateAccount }) => {
-  const article = document.createElement('article');
+  const article = document.createElement('article')
 
-  const header = createHeader({ onLogin, onLogout, onCreateAccount, user });
-  article.appendChild(header);
+  const header = createHeader({ onLogin, onLogout, onCreateAccount, user })
+  article.appendChild(header)
   const section = `
   <section>
     <h2>Pages in Storybook</h2>
@@ -59,9 +59,9 @@ export const createPage = ({ user, onLogout, onLogin, onCreateAccount }) => {
       Viewports addon in the toolbar
     </div>
   </section>
-`;
+`
 
-  article.insertAdjacentHTML('beforeend', section);
+  article.insertAdjacentHTML('beforeend', section)
 
-  return article;
-};
+  return article
+}
